@@ -1,0 +1,158 @@
+.PEpre-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.PEpre-loader-box {
+    text-align: center;
+}
+
+.PEloader-logo img {
+    width: 100px;
+}
+
+.PEloader-progress {
+    width: 100%;
+    background-color: #e5e7eb;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.PEloader-progress .PEbar {
+    width: 0%;
+    height: 100%;
+    background-color: #3b82f6;
+}
+
+.PEpercent {
+    margin-top: 10px;
+}
+
+.PEloading-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.PEmain-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 250px; 
+    width: calc(100% - 250px); 
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.PEpage-header .PEtitle h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.PEbreadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 16px; 
+}
+
+.PEbreadcrumb-item {
+    display: inline-block;
+    vertical-align: middle;
+    color: #434446;
+    margin-right: 5px;
+}
+
+.PEbreadcrumb-item.PEactive {
+    color: #23211f;
+}
+
+.PEbreadcrumb-item.PEactive::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #e02920;
+    margin-right: 5px;
+}
+
+.PEcard-box {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #130909;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    width: 100%; 
+    max-width: 1000px;
+    margin: 20px auto; 
+}
+
+.PEcard-box .PEpd-20 {
+    padding: 20px;
+}
+
+.PEcard-box .PEpb-20 {
+    padding-bottom: 20px;
+}
+
+.PEtext-blue {
+    color: #010816;
+}
+
+.PEtable {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.PEtable th,
+.PEtable td {
+    padding: 10px;
+    border: 3px solid #ebf2f2;
+    color: #000000;
+    font-size: 15px;
+}
+
+.PEtable td {
+    color: #000000; 
+}
+
+.PEtable th {
+    background-color: #ebe5e5;
+}
+
+.PEtable .PEname-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.PEtable .PEavatar {
+    margin-right: 10px;
+}
+
+.PEtable .PEavatar img {
+    border-radius: 50%;
+}
+
+.PEtable .PEtable-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PEtable .PEtable-actions a {
+    color: #265ed7;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.PEtable .PEdatatable-nosort {
+    cursor: default;
+}

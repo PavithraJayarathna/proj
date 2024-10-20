@@ -1,0 +1,154 @@
+.REpre-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.REpre-loader-box {
+  text-align: center;
+}
+
+.REloader-logo img {
+  width: 100px;
+}
+
+.REloader-progress {
+  width: 100%;
+  background-color: #e5e7eb;
+  height: 4px;
+  margin-top: 10px;
+}
+
+.REloader-progress .REbar {
+  width: 0%;
+  height: 100%;
+  background-color: #3b82f6;
+}
+
+.REpercent {
+  margin-top: 10px;
+}
+
+.REloading-text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.REmain-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 250px; 
+  width: calc(100% - 250px); 
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.REpage-header .REtitle h4 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.REbreadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 16px; 
+}
+.REbreadcrumb-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: #434446;
+  margin-right: 5px;
+}
+
+.REbreadcrumb-item.REactive {
+  color: #23211f;
+}
+.REbreadcrumb-item.REactive::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #e02920;
+  margin-right: 5px;
+}
+
+.REcard-box {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  color: #130909;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  width: 100%; 
+  max-width: 1000px;
+  margin: 20px auto; 
+}
+.REcard-box .REpd-20 {
+  padding: 20px;
+}
+
+.REcard-box .REpb-20 {
+  padding-bottom: 20px;
+}
+
+.REtext-blue {
+  color: #010816;
+}
+
+.REtable {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+.REtable th,
+.REtable td {
+  padding: 10px;
+  border: 3px solid #ebf2f2;
+  color: #000000;
+  font-size: 15PX;
+}
+.REtable td {
+  color: #000000; 
+}
+
+.REtable th {
+  background-color: #ebe5e5;
+} 
+
+.REtable .REname-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.REtable .REavatar {
+  margin-right: 10px;
+}
+
+.REtable .REavatar img {
+  border-radius: 50%;
+}
+
+.REtable .REtable-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.REtable .REtable-actions a {
+  color: #265ed7;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.REtable .REdatatable-nosort {
+  cursor: default;
+}

@@ -1,0 +1,98 @@
+.Amain-container {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+.Apage-header {
+  margin-bottom: 20px;
+}
+
+.Atitle h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+
+.Abreadcrumb-item.REactive {
+  color: #23211f;
+}
+.Abreadcrumb-item.REactive::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #e02920;
+  margin-right: 5px;
+}
+
+.Acard-box {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  color: #130909;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  width: 100%; 
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.Asearch-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+   
+}
+
+
+.Asearch-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #130606;
+  width: 20%;
+  border-radius: border-box;
+  width: 100%;
+  display: flexbox; 
+
+  
+}
+
+
+.Aemployee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.Aemployee-table th, .Aemployee-table td {
+  padding: 10px;
+  border: 3px solid #e7f0f0;
+  text-align: left;
+  font-size: 15px;
+}
+
+.Aemployee-table th {
+  background-color: #f4f4f4;
+}
+
+.delete-icon {
+  background: white;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.Abtn-secondary {
+  color: white;
+  background-color: rgb(8, 124, 58);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); 
+
+*{
+  font-family: 'Poppins';
+}
+
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background-color: #121928; 
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column; 
+  z-index: 1000; 
+}
+
+
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff; 
+  padding-bottom: 10px; 
+}
+
+.logo-image {
+  max-width: 70px; 
+  margin-right: 10px;
+  height: 70px;   
+  transition: transform 0.3s ease; 
+}
+
+.logo-image:hover {
+  transform: scale(1.2); 
+}
+
+.logo-name {
+  font-size: 24px;
+  white-space: nowrap;
+  font-weight: 500;
+  color: #ecb900;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1; 
+}
+
+.sidebar-menu li {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu li a,
+.staff-menu-button,
+.leave-menu-button,
+.logout-button {
+  color: #ffffff; 
+  text-decoration: none;
+  font-size: 16px;
+  display: flex; 
+  align-items: center; 
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu li a:hover,
+.staff-menu-button:hover,
+.leave-menu-button:hover,
+.logout-button:hover {
+  background-color: #3b3f5c; 
+}
+
+.staff-menu-button,
+.leave-menu-button,
+.logout-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left; }
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.submenu li {
+  margin-bottom: 10px; }
+
+.submenu li a {
+  font-size: 14px;
+  color: #ffffff; 
+}
+
+.submenu li a:hover {
+  background-color: #3b3f5c; 
+}
+
+
+
+.menu-icon {
+  margin-right: 20px; 
+}
+
+.chevron-icon {
+  margin-left: auto;
+  transition: transform 0.3s;
+  font-size: 0.7em;
+}
+
+.chevron-icon.rotate {
+  transform: rotate(90deg);
+}
+
+.submenu {
+  padding-left: 20px; 
+}
+
+
+.sidebar-menu li a::before,
+.staff-menu-button::before,
+.leave-menu-button::before,
+.logout-button::before {
+  content: ''; 
+  width: 20px; 
+  height: 20px; 
+  margin-right: 10px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sidebar-menu li a[aria-current="page"] {
+  background-color: #515573; 
+  border-left: 4px solid #1f8efa; 
+  padding-left: 11px; 
+}
+.sidebar-menu li a.active {
+  background-color: #3b3f5c; 
+  color: #ffffff; 
+  border-left: 4px solid #1f8efa; 
+  padding-left: 11px; 
+}
+
+
+.sidebar-footer {
+  padding-top: 10px; 
+  margin-top: auto; 
+  border-top: 1px solid #ffffff; 
+  padding-top: 10px; 
+}
+
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #ffffff; 
+  text-decoration: none;
+  font-size: 16px;
+  display: flex; 
+  align-items: center; 
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  text-align: left; 
+  width: 100%;
+  margin-bottom: 20px; 
+}
+
+.logout-button:hover {
+  background-color: #3b3f5c; 
+}

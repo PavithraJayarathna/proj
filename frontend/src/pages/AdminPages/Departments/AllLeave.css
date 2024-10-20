@@ -1,0 +1,158 @@
+.ALpre-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+  
+.ALpre-loader-box {
+    text-align: center;
+}
+  
+.ALloader-logo img {
+    width: 100px;
+}
+  
+.ALloader-progress {
+    width: 100%;
+    background-color: #e5e7eb;
+    height: 4px;
+    margin-top: 10px;
+}
+  
+.ALloader-progress .ALbar {
+    width: 0%;
+    height: 100%;
+    background-color: #3b82f6;
+}
+  
+.ALpercent {
+    margin-top: 10px;
+}
+  
+.ALloading-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+  
+.ALmain-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 250px; 
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+  
+.ALpage-header .ALtitle h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+   
+}
+  
+.ALbreadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 16px; 
+}
+.ALbreadcrumb-item {
+    display: inline-block;
+    vertical-align: middle;
+    color: #434446;
+    margin-right: 5px;
+}
+  
+.ALbreadcrumb-item.ALactive {
+    color: #23211f;
+}
+.ALbreadcrumb-item.ALactive::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #e02920;
+    margin-right: 5px;
+}
+  
+.ALcard-box {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #130909;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto; 
+}
+.ALcard-box .ALpd-20 {
+    padding: 20px;
+}
+  
+.ALcard-box .ALpb-20 {
+    padding-bottom: 20px;
+}
+  
+.ALtext-blue {
+    color: #010816;
+}
+  
+.ALtable {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+  
+.ALtable th,
+.ALtable td {
+    padding: 10px;
+    border: 3px solid #ebf2f2;
+    color: #000000;
+    font-size: 15PX;
+}
+.ALtable td {
+    color: #000000; 
+  }
+  
+  .ALtable th {
+    background-color: #ebe5e5;
+  } 
+  
+  
+
+  
+.ALtable .ALname-avatar {
+    display: flex;
+    align-items: center;
+}
+  
+.ALtable .ALavatar {
+    margin-right: 10px;
+}
+  
+.ALtable .ALavatar img {
+    border-radius: 50%;
+}
+  
+.ALtable .ALtable-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.ALtable .ALtable-actions a {
+    color: #265ed7;
+    margin: 0 5px;
+    font-size: 20px;
+}
+  
+.ALtable .ALdatatable-nosort {
+    cursor: default;
+}

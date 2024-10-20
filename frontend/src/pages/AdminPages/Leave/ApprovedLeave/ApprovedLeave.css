@@ -1,0 +1,158 @@
+.APpre-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+}
+  
+.APpre-loader-box {
+    text-align: center;
+}
+  
+.APloader-logo img {
+    width: 100px;
+}
+  
+.APloader-progress {
+    width: 100%;
+    background-color: #e5e7eb;
+    height: 4px;
+    margin-top: 10px;
+}
+  
+.APloader-progress .APbar {
+    width: 0%;
+    height: 100%;
+    background-color: #3b82f6;
+}
+  
+.APpercent {
+    margin-top: 10px;
+}
+  
+.APloading-text {
+    margin-top: 10px;
+    font-size: 16px;
+}
+  
+.APmain-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 250px; 
+    width: calc(100% - 250px); 
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+  
+.APpage-header .APtitle h4 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+   
+}
+  
+.APbreadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+.APbreadcrumb-item {
+    display: inline-block;
+    vertical-align: middle;
+    color: #434446;
+    margin-right: 5px;
+}
+  
+.APbreadcrumb-item.APactive {
+    color: #23211f;
+}
+.APbreadcrumb-item.APactive::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #e02920;
+    margin-right: 5px;
+}
+  
+.APcard-box {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: #130909;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    width: 100%; 
+    max-width: 1000px;
+    margin: 20px auto; 
+}
+.APcard-box .APpd-20 {
+    padding: 20px;
+}
+  
+.APcard-box .APpb-20 {
+    padding-bottom: 20px;
+}
+  
+.APtext-blue {
+    color: #010816;
+}
+  
+.APtable {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+  
+.APtable th,
+.APtable td {
+    padding: 10px;
+    border: 3px solid #ebf2f2;
+    color: #000000;
+    font-size: 15px;
+}
+.APtable td {
+    color: #000000; 
+  }
+  
+  .APtable th {
+    background-color: #ebe5e5;
+  } 
+  
+  
+
+  
+.APtable .APname-avatar {
+    display: flex;
+    align-items: center;
+}
+  
+.APtable .APavatar {
+    margin-right: 10px;
+}
+  
+.APtable .APavatar img {
+    border-radius: 50%;
+}
+  
+.APtable .APtable-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.APtable .APtable-actions a {
+    color: #265ed7;
+    margin: 0 5px;
+    font-size: 20px;
+}
+  
+.APtable .APdatatable-nosort {
+    cursor: default;
+}

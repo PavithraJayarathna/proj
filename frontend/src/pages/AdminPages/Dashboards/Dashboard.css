@@ -1,0 +1,155 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+
+
+.Ddashboard-container {
+  display: flex;
+  background-color: #f0f2f5;
+  font-family: 'Arial, sans-serif';
+  height: 130vh; 
+  margin-left: 230px; 
+}
+
+
+.Ddashboard-content {
+  padding: 20px;
+  flex-grow: 1; 
+}
+
+
+.Ddashboard-header {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Ddashboard-header h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #0a0404;
+}
+
+.Ddashboard-header p {
+  padding-top: 10px;
+  margin: 5px 0;
+  font-size: 18px;
+  color: #6c757d;
+}
+
+
+.Dwidgets {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
+
+
+.Dcard-box {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(15, 208, 170, 0.1);
+  width: calc(25% - 20px); 
+  margin-bottom: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Dcard-box-all {
+  background: linear-gradient(135deg, rgb(173, 236, 240), hsl(184, 69%, 91%));
+}
+
+.Dcard-box-approved {
+  background: linear-gradient(135deg, rgb(166, 217, 166), hsl(120, 40%, 85%)); 
+}
+
+.Dcard-box-pending {
+  background: linear-gradient(135deg, rgb(123, 236, 244), hsl(215, 54%, 79%)); 
+}
+
+.Dcard-box-rejected {
+  background: linear-gradient(135deg, rgb(233, 114, 209), hsl(0, 100%, 95%)); 
+}
+
+
+
+.Dwidget-data {
+  text-align: left; 
+  padding-left: 20px; 
+}
+
+.Dwidget-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: auto; }
+
+.Dicon-img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.Dweight-700 {
+  font-weight: 700;
+}
+
+.Dfont-24 {
+  font-size: 30px;
+}
+
+.Dfont-14 {
+  font-size: 14px;
+}
+
+.Dtext-dark {
+  color: #000000;
+}
+
+.Dtext-secondary {
+  color: #818c96;
+}
+
+
+.Dsummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+.Dchart-container {
+  background: #fdfbfb;
+  border-radius: 10px;
+  padding: 80px;
+  padding-top: 20px;
+  width: 60%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  margin-left: 50px ;
+  margin-top: 50px;
+}
+
+.Dcalendar-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 60px;
+  width: 30%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  margin-top: 50px ;
+}

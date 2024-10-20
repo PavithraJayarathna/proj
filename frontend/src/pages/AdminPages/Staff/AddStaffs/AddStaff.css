@@ -1,0 +1,135 @@
+
+.Amain-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 250px; 
+  width: calc(100% - 250px); 
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+
+.Apage-header .Atitle h4 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+
+
+.Abreadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 16px; 
+}
+.Abreadcrumb-item.REactive {
+  color: #23211f;
+}
+.Abreadcrumb-item.REactive::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #e02920;
+  margin-right: 5px;
+}
+
+
+.Abreadcrumb-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: #464343;
+  margin-right: 5px;
+}
+
+.Abreadcrumb-item.Aactive {
+  color: #23211f;
+}
+
+.Abreadcrumb-item.active::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #434446; 
+  margin: 0 5px;
+}
+
+
+.Acard-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.Atext-blue.h4 {
+  color: #000000;
+  font-size: 24px;
+}
+
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.Aform-group-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.Aform-group {
+  flex: 1;
+  min-width: 300px;
+}
+
+.Aform-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+fieldset {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: 500;
+  color: #001224;
+  padding: 0 10px;
+}
+
+
+.Abtn-primary {
+  background-color: #01070f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 800px;
+  width: 50%;
+}
+
+.Abtn-primary:hover {
+  background-color: #010203;
+}
+

@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  width: 100vw;
+  padding: 10px 20px; 
+  background-color: #121928;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0; 
+  z-index: 1000; 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.navbar-log {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-log a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #eff848;
+}
+
+.log-image {
+  height: 80px; 
+  margin-right: 10px; 
+  transition: transform 0.3s ease;
+}
+
+.log-image:hover {
+  transform: scale(1.2); 
+}
+
+.log-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links-container {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  flex: 1; 
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex; 
+  gap: 2.5rem; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.navbar-links li {
+  display: inline; 
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #875353;
+}
+.navbar-links a.active-link {
+  text-decoration: underline; 
+  color: #eff848; 
+}
+.navbar-login-button {
+  background-color: #009688;
+  color: #fff;
+  border: 2px solid rgb(229, 244, 23);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  margin-left: 15px; 
+}
+
+.navbar-login-button:hover {
+  background-color: #0d071d;
+  animation: shake 1s;
+  animation-iteration-count: 0.1s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+

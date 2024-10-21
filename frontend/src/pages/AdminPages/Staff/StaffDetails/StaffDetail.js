@@ -3,7 +3,7 @@ import AdminSidebar from '../../../../component/AdminNavBar/AdminBar';
 import './StaffDetail.css';
 import { AiOutlineDelete } from 'react-icons/ai'; 
 
-const apiUrl = process.env.HOST_ADDRESS
+const apiUrl = process.env.REACT_APP_HOST_ADDRESS
 
 
 const StaffDetail = () => {

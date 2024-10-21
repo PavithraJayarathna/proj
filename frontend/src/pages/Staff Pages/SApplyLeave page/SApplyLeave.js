@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import StaffBar from '../../../component/StaffNavBar/StaffBar';
 import './SApplyLeave.css';
 
-const apiUrl = process.env.HOST_ADDRESS
+const apiUrl = process.env.REACT_APP_HOST_ADDRESS
 
 export default function SApplyLeave() {
   const [form, setForm] = useState({

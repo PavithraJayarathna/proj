@@ -7,7 +7,7 @@ import hideIcon from '../image/hide.jpeg';
 import closeIcon from '../image/close.png';
 import { useNavigate } from 'react-router-dom';
 
-const apiUrl = process.env.HOST_ADDRESS
+const apiUrl = process.env.REACT_APP_HOST_ADDRESS;
 
 export default function LoginForm({ loginType, onClose }) {
   const [email, setEmail] = useState('');
@@ -21,6 +21,8 @@ export default function LoginForm({ loginType, onClose }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
+
+      console.log(apiUrl);
      
       const url = loginType === 'admin'
         ? `${apiUrl}/admin/login`

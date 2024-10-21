@@ -10,7 +10,7 @@ import Approved from '../../../image/approved.png';
 import Pending from '../../../image/pending.png';
 import Rejected from '../../../image/reject.png';
 
-const apiUrl = env.process.HOST_ADDRESS
+const apiUrl = process.env.HOST_ADDRESS
 
 const Dashboard = () => {
   const chartRef = useRef(null);

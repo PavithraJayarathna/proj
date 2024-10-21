@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import StaffBar from '../../../component/StaffNavBar/StaffBar';
 import './Profile.css';
-const apiUrl = env.process.HOST_ADDRESS
+
+const apiUrl = process.env.HOST_ADDRESS
 
 const Profile = () => {
   const [staff, setStaff] = useState(null);

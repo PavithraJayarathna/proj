@@ -7,7 +7,7 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { PiHandshakeFill } from "react-icons/pi"; 
 import { MdOutlinePhoneInTalk } from "react-icons/md"; 
 
-const apiUrl = env.process.HOST_ADDRESS
+const apiUrl = process.env.HOST_ADDRESS
 
 export default function ContactUs() {
   const [email, setEmail] = useState('');        

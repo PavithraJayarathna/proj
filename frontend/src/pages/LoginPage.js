@@ -7,7 +7,7 @@ import hideIcon from '../image/hide.jpeg';
 import closeIcon from '../image/close.png';
 import { useNavigate } from 'react-router-dom';
 
-const apiUrl = env.process.HOST_ADDRESS
+const apiUrl = process.env.HOST_ADDRESS
 
 export default function LoginForm({ loginType, onClose }) {
   const [email, setEmail] = useState('');

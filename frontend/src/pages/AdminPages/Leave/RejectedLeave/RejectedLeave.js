@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import AdminSidebar from '../../../../component/AdminNavBar/AdminBar';
 import './RejectedLeave.css'; 
-const apiUrl = env.process.HOST_ADDRESS
+
+const apiUrl = process.env.HOST_ADDRESS
 
 const RejectedLeave = () => {
   const [rejectedLeaves, setRejectedLeaves] = useState([]);

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AdminSidebar from '../../../../component/AdminNavBar/AdminBar'; 
 import './AddStaff.css'; 
 
-const apiUrl = env.process.HOST_ADDRESS
+const apiUrl = process.env.HOST_ADDRESS
 
 const AddStaffForm = () => {
     const [formData, setFormData] = useState({

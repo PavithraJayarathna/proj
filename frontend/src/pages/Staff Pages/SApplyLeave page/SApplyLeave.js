@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import StaffBar from '../../../component/StaffNavBar/StaffBar';
 import './SApplyLeave.css';
+const apiUrl = env.process.HOST_ADDRESS
 
 export default function SApplyLeave() {
   const [form, setForm] = useState({
@@ -27,7 +28,7 @@ export default function SApplyLeave() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5080/api/applyLeave', {
+      const response = await fetch(`${apiUrl}/api/applyLeave`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

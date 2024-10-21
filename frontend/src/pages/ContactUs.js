@@ -7,6 +7,8 @@ import { IoIosCloseCircleOutline } from "react-icons/io";
 import { PiHandshakeFill } from "react-icons/pi"; 
 import { MdOutlinePhoneInTalk } from "react-icons/md"; 
 
+const apiUrl = env.process.HOST_ADDRESS
+
 export default function ContactUs() {
   const [email, setEmail] = useState('');        
   const [message, setMessage] = useState(''); 
@@ -20,7 +22,7 @@ export default function ContactUs() {
 
     try {
     
-      const backendResponse = await fetch('http://localhost:5080/api/send-email', {
+      const backendResponse = await fetch(`${apiUrl}/api/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

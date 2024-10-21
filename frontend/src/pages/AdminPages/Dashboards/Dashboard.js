@@ -10,6 +10,8 @@ import Approved from '../../../image/approved.png';
 import Pending from '../../../image/pending.png';
 import Rejected from '../../../image/reject.png';
 
+const apiUrl = env.process.HOST_ADDRESS
+
 const Dashboard = () => {
   const chartRef = useRef(null);
   const [chartInstance, setChartInstance] = useState(null);
@@ -38,7 +40,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const response = await fetch('http://localhost:5080/api/dashboard-stats');
+        const response = await fetch(`${apiUrl}/api/dashboard-stats`);
         const data = await response.json();
 
         

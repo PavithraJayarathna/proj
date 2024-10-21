@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import StaffBar from '../../../component/StaffNavBar/StaffBar';
 import './Profile.css';
+const apiUrl = env.process.HOST_ADDRESS
 
 const Profile = () => {
   const [staff, setStaff] = useState(null);
@@ -12,7 +13,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchStaffDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5080/api/staff/${encodeURIComponent(email)}`);
+        const response = await fetch(`${apiUrl}/api/staff/${encodeURIComponent(email)}`);
 
         if (!response.ok) {
           const errorMessage = await response.text();
@@ -45,7 +46,7 @@ const Profile = () => {
 
   const handleSaveClick = async () => {
     try {
-      const response = await fetch(`http://localhost:5080/api/staff/${encodeURIComponent(email)}`, {
+      const response = await fetch(`${apiUrl}/api/staff/${encodeURIComponent(email)}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

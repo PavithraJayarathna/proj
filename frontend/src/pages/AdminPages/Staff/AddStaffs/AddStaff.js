@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import AdminSidebar from '../../../../component/AdminNavBar/AdminBar'; 
 import './AddStaff.css'; 
 
+const apiUrl = env.process.HOST_ADDRESS
+
 const AddStaffForm = () => {
     const [formData, setFormData] = useState({
         Afirstname: '',
@@ -29,7 +31,7 @@ const AddStaffForm = () => {
         console.log('Form Data:', formData);
 
         try {
-            const response = await fetch('http://localhost:5080/api/addStaff', {
+            const response = await fetch(`${apiUrl}/api/addStaff`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

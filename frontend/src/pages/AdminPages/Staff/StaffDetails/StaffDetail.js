@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import AdminSidebar from '../../../../component/AdminNavBar/AdminBar';
 import './StaffDetail.css';
 import { AiOutlineDelete } from 'react-icons/ai'; 
+const apiUrl = env.process.HOST_ADDRESS
+
 
 const StaffDetail = () => {
   const [staffList, setStaffList] = useState([]);
@@ -11,7 +13,7 @@ const StaffDetail = () => {
   useEffect(() => {
     const fetchStaff = async () => {
       try {
-        const response = await fetch('http://localhost:5080/api/employeedetails');
+        const response = await fetch(`${apiUrl}/api/employeedetails`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

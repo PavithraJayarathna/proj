@@ -7,6 +7,8 @@ import hideIcon from '../image/hide.jpeg';
 import closeIcon from '../image/close.png';
 import { useNavigate } from 'react-router-dom';
 
+const apiUrl = env.process.HOST_ADDRESS
+
 export default function LoginForm({ loginType, onClose }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,8 +23,8 @@ export default function LoginForm({ loginType, onClose }) {
     try {
      
       const url = loginType === 'admin'
-        ? 'http://localhost:5080/admin/login'
-        : 'http://localhost:5080/api/stafflogin';
+        ? `${apiUrl}/admin/login`
+        : `${apiUrl}/api/stafflogin`;
 
       const response = await fetch(url, {
         method: 'POST',

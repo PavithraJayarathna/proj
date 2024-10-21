@@ -6,6 +6,7 @@ import All from '../../../image/alll.png';
 import Approved from '../../../image/approved.png';
 import Pending from '../../../image/pending.png';
 import Rejected from '../../../image/reject.png';
+const apiUrl = env.process.HOST_ADDRESS
 
 export default function LeaveHistory() {
   const [leaves, setLeaves] = useState([]);

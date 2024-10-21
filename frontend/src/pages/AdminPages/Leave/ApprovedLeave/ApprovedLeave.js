@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import AdminSidebar from '../../../../component/AdminNavBar/AdminBar';
 import './ApprovedLeave.css';
 
+const apiUrl = env.process.HOST_ADDRESS
+
 const ApprovedLeave = () => {
   const [approvedLeaves, setApprovedLeaves] = useState([]);
 
   const fetchApprovedLeaves = async () => {
     try {
-      const response = await fetch('http://localhost:5080/api/approvedLeaves'); 
+      const response = await fetch(`${apiUrl}/api/approvedLeaves`); 
       const data = await response.json();
       setApprovedLeaves(data);
     } catch (error) {

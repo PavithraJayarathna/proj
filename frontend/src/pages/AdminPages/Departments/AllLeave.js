@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import AdminSidebar from '../../../component/AdminNavBar/AdminBar';
 import './AllLeave.css';
 
+const apiUrl = env.process.HOST_ADDRESS
+
 const AllLeave = () => {
   const [allLeaves, setAllLeaves] = useState([]);
 
   const fetchAllLeaves = async () => {
     try {
-      const response = await fetch('http://localhost:5080/api/allLeaves');
+      const response = await fetch(`${apiUrl}/api/allLeaves`);
       const data = await response.json();
       console.log('Fetched leave data:', data);
 
@@ -25,7 +27,7 @@ const AllLeave = () => {
 
   const handleStatusChange = async (leaveId, status) => {
     try {
-      const response = await fetch('http://localhost:5080/api/updateLeaveStatus', {
+      const response = await fetch(`${apiUrl}/api/updateLeaveStatus`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -51,7 +53,7 @@ const AllLeave = () => {
 
   const addNewLeave = async (newLeave) => {
     try {
-      const response = await fetch('http://localhost:5080/api/addLeave', {
+      const response = await fetch(`${apiUrl}/api/addLeave`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

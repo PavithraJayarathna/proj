@@ -7,7 +7,7 @@ const PendingLeave = () => {
 
   const fetchPendingLeaves = async () => {
     try{
-    const response = await fetch('http://localhost:5080/api/pendingLeaves'); 
+    const response = await fetch(`${apiUrl}/api/pendingLeaves`); 
     const data = await response.json();
     setPendingLeaves(data);
   }catch(error){

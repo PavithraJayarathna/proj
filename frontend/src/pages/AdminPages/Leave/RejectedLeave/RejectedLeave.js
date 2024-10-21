@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import AdminSidebar from '../../../../component/AdminNavBar/AdminBar';
 import './RejectedLeave.css'; 
+const apiUrl = env.process.HOST_ADDRESS
 
 const RejectedLeave = () => {
   const [rejectedLeaves, setRejectedLeaves] = useState([]);
 
   const fetchRejectedLeaves = async () => {
     try{
-    const response = await fetch('http://localhost:5080/api/rejectedLeaves'); 
+    const response = await fetch(`${apiUrl}/api/rejectedLeaves`); 
     const data = await response.json();
     setRejectedLeaves(data);
   } catch(error) {

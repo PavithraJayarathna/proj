@@ -6,6 +6,7 @@ import All from '../../../image/alll_leave.png';
 import Approved from '../../../image/approved.png';
 import Pending from '../../../image/pending.png';
 import Rejected from '../../../image/reject.png';
+const apiUrl = env.process.HOST_ADDRESS
 
 export default function LeaveHistory() {
   const [leaves, setLeaves] = useState([]);
@@ -21,7 +22,7 @@ export default function LeaveHistory() {
     const fetchData = async () => {
       try {
        
-        const result = await axios.get(`http://localhost:5080/api/leaves/${encodeURIComponent(emails)}`);
+        const result = await axios.get(`${apiUrl}/api/leaves/${encodeURIComponent(emails)}`);
         setLeaves(result.data);
 
 
